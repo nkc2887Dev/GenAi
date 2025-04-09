@@ -1,4 +1,4 @@
-# First Assessment :: Write a program to print Twinkle twinkle little star poem in python.
+### First Assessment :: Write a program to print Twinkle twinkle little star poem in python.
 
 poem = '''Twinkle, twinkle, little star,
 How I wonder what you are!
@@ -27,18 +27,18 @@ Twinkle, twinkle, little star.'''
 
 print(poem)
 
-# Second Assessment :: Use REPL and print the table of 5 using it. 
+### Second Assessment :: Use REPL and print the table of 5 using it. 
 
 for i in range(1, 11):print(f"5 x {i} = {5 * i}")
 
-# Third Assessment :: Install an external module and use it to perform an operation of your interest. 
+### Third Assessment :: Install an external module and use it to perform an operation of your interest. 
 
 import pyttsx3
 engine = pyttsx3.init()
 engine.say("Hey Ganda")
 engine.runAndWait()
 
-# fourth Assessment :: Write a python program to print the contents of a directory using the os module. Search online for the function which does that
+### fourth Assessment :: Write a python program to print the contents of a directory using the os module. Search online for the function which does that
 
 import os
 directory_path = '.'
@@ -48,7 +48,7 @@ for item in contents:
     print(item)
 
 
-# fifth Assessment :: Label the program written in problem 4 with comments. 
+### fifth Assessment :: Label the program written in problem 4 with comments. 
 
 import os
 directory_path = '.'
