@@ -89,10 +89,11 @@ a = {
 
 # In a dictionary, values can be duplicated, only keys must be unique.
 
-### NINE Assessment :: Can you change the values inside a list which is contained in set j?
+### NINE Assessment :: Can you change the values inside a list which is contained in set j?)
 
 # j = { 8, 7, 12, "Dev", [1,2] }  # ❌ TypeError: unhashable type: 'list'
 j = {8, 7, 12, "Dev", (1, 2)}  # ✅ This is valid
+j[4][0] = 9 # TypeError: 'set' object is not subscriptable
 print(j)
 
 # 1 List of Lists – if you want to be able to modify inner values
