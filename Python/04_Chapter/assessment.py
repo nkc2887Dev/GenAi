@@ -97,16 +97,16 @@ j[4][0] = 9 # TypeError: 'set' object is not subscriptable
 print(j)
 
 # 1 List of Lists – if you want to be able to modify inner values
-s = [8, 7, 12, "Harry", [1, 2]]  # ✅ Valid
+k = [8, 7, 12, "Harry", [1, 2]]  # ✅ Valid
 
 # You can now modify the list inside
-s[-1][0] = 99
-print(s)  # Output: [8, 7, 12, 'Harry', [99, 2]]
+k[-1][0] = 99
+print(k)  # Output: [8, 7, 12, 'Harry', [99, 2]]
 
 # 2. Set of Tuples – if you want set behavior (no duplicates) and fixed data
-s = {8, 7, 12, "Harry", (1, 2)}  # ✅ Valid set
+l = {8, 7, 12, "Harry", (1, 2)}  # ✅ Valid set
 
 # You cannot change the (1, 2) tuple itself — but you can remove and add
-s.remove((1, 2))
-s.add((99, 2))
-print(s)  # Output: {99, 2, 7, 8, 12, 'Harry'} depending on order
+l.remove((1, 2))
+l.add((99, 2))
+print(l)  # Output: {99, 2, 7, 8, 12, 'Harry'} depending on order
