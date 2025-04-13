@@ -1,8 +1,9 @@
 ## OBJECT ORIENTED PROGRAMMING
 
 class Employer:
-    def __init__(self, name):
+    def __init__(self, name): # constructor || __init__() is a special method which is first run as soon as the object is created.
         self.name=name
+        
     def get_name(self):
         print("Hello", self)
 
@@ -13,4 +14,6 @@ class Employer:
 
 a = Employer("DEV")
 b = a.greet("def")
+c = get_name() #equivalent to Employer.get_name(a)
+
 print(b)
