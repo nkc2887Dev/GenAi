@@ -63,20 +63,26 @@ class Employee:
 ### FOURTH Assessment ::  Write a class ‘Complex’ to represent complex numbers, along with overloaded operators ‘+’ and ‘*’ which adds and multiplies them.
 
 class Complex:
-    def __init__(self, num):
-        self.num = num
-        print(f"Complex number: {self.num}")
+    def __init__(self, real, imag):
+        self.real = real
+        self.imag = imag
 
-    def __add__(self, num2):
-        return self.num + num2.num
+    def __add__(self, other):
+        return Complex(self.real + other.real, self.imag + other.imag)
 
-    def __mul__(self, num2):
-        return self.num * num2.num
+    def __mul__(self, other):
+        # (a + bi) * (c + di) = (ac - bd) + (ad + bc)i
+        real = self.real * other.real - self.imag * other.imag
+        imag = self.real * other.imag + self.imag * other.real
+        return Complex(real, imag)
 
-# e = Complex(4)
-# f = Complex(3)
-# print(e+f)
-# print(e*f)
+    # def __str__(self):
+    #     return f"{self.real} + {self.imag}i"
+
+e = Complex(3,2)
+f = Complex(1,7)
+print(e+f)
+print(e*f)
 
 ### FIFTH Assessment :: Write a class vector representing a vector of n dimensions. Overload the + and * operator which calculates the sum and the dot(.) product of them.
 
@@ -115,7 +121,7 @@ class String:
 # i = String([7, 8, 10])
 # print(str(i))
 
-### SEVENTH Assessment :: 
+### SEVENTH Assessment :: Override the __len__() method on vector of problem 5 to display the dimension of the vector.
 
 
 class Length:
