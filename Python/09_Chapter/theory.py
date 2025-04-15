@@ -14,6 +14,6 @@ class Employer:
 
 a = Employer("DEV")
 b = a.greet("def")
-c = get_name() #equivalent to Employer.get_name(a)
+# c = a.get_name() #equivalent to Employer.get_name(a)
 
 print(b)
