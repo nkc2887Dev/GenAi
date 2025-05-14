@@ -10,3 +10,5 @@
 [genieincodebottle/generative-ai](https://github.com/genieincodebottle/generative-ai/blob/main/GenAI_Roadmap.md)
 
 [YT - wscube tech](https://youtu.be/-33oXx0TwHI?si=RKg_yALNrLIuPTso)
+
+[medium - Yash Rajkumar Rai](https://medium.com/@19se02it47)
